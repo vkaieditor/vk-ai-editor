@@ -1,0 +1,514 @@
+
+<!-- saved from url=(0064)file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VK AI Editor | Cinematic AI Prompts &amp; Creative Services</title>
+
+  <meta name="description" content="VK AI Editor creates cinematic AI prompts, creative visuals, advertisements and AI-powered content.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #080808;
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(8,8,8,0.88);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #b886ff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #b886ff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 60px;
+      background: radial-gradient(circle at top, #24173a 0%, #080808 48%);
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 90px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #b886ff, #fff, #8f6cff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      border: 1px solid #555;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #999;
+      margin-bottom: 50px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      padding: 35px;
+      border: 1px solid #252525;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #111, #090909);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #8f6cff;
+    }
+
+    .card-icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #999;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      min-height: 260px;
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #252525;
+      background:
+        linear-gradient(to top, #050505, transparent),
+        radial-gradient(circle at 30% 30%, #52377c, #111 60%);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+    }
+
+    .project:nth-child(2) {
+      background:
+        linear-gradient(to top, #050505, transparent),
+        radial-gradient(circle at 70% 20%, #274d65, #111 60%);
+    }
+
+    .project:nth-child(3) {
+      background:
+        linear-gradient(to top, #050505, transparent),
+        radial-gradient(circle at 50% 20%, #704d28, #111 60%);
+    }
+
+    .project h3 {
+      font-size: 24px;
+    }
+
+    .project p {
+      color: #bbb;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+      border: 1px solid #292929;
+      border-radius: 25px;
+      background: #0d0d0d;
+    }
+
+    .contact-box p {
+      color: #999;
+      margin: 15px 0 25px;
+    }
+
+    .contact-email {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #b886ff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #222;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      nav ul {
+        display: none;
+      }
+
+      .services,
+      .portfolio {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 6%;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+    }
+  </style>
+
+
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">
+      VK<span>AI</span> Editor
+    </div>
+
+    <ul>
+      <li><a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#home">Home</a></li>
+      <li><a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#services">Services</a></li>
+      <li><a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#portfolio">Portfolio</a></li>
+      <li><a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#about">About</a></li>
+      <li><a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>
+        Create.
+        <span class="gradient">Imagine.</span>
+        <br>
+        Transform.
+      </h1>
+
+      <p>
+        AI Cinematic Prompts, Creative Visuals &amp;
+        Digital Content for creators and businesses.
+      </p>
+
+      <div class="buttons">
+
+        <a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#portfolio" class="btn primary">
+          View My Work
+        </a>
+
+        <a href="file:///C:/Users/Pawan%20Yadav/Documents/New%20folder/index.html#contact" class="btn secondary">
+          Hire Me
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <h2 class="section-title">My Services</h2>
+
+    <p class="section-subtitle">
+      AI-powered creative services for modern brands and creators.
+    </p>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h3>Cinematic AI Prompts</h3>
+        <p>
+          Professional prompts for cinematic,
+          realistic and creative AI images.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <h3>Real Estate Ads</h3>
+        <p>
+          Premium AI visuals and advertisements
+          for houses, properties and real estate.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Social Media Creatives</h3>
+        <p>
+          Eye-catching AI content for Instagram,
+          YouTube and other social platforms.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">👤</div>
+        <h3>AI Portraits</h3>
+        <p>
+          Cinematic portraits and professional
+          creative concepts using AI.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛍️</div>
+        <h3>Product Advertising</h3>
+        <p>
+          High-quality AI product scenes and
+          advertising concepts.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">✨</div>
+        <h3>Custom AI Projects</h3>
+        <p>
+          Custom AI creative solutions according
+          to your project requirements.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+
+    <h2 class="section-title">My Portfolio</h2>
+
+    <p class="section-subtitle">
+      Some examples of the creative work I can provide.
+    </p>
+
+    <div class="portfolio">
+
+      <div class="project">
+        <h3>Luxury House</h3>
+        <p>AI Real Estate Advertisement</p>
+      </div>
+
+      <div class="project">
+        <h3>Cinematic Portrait</h3>
+        <p>AI Photography Concept</p>
+      </div>
+
+      <div class="project">
+        <h3>Premium Product</h3>
+        <p>AI Product Advertisement</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="about">
+
+      <h2 class="section-title">About Me</h2>
+
+      <p>
+        I'm a creative freelancer focused on AI-generated
+        visuals, cinematic prompting and digital content.
+        My goal is to help creators and businesses turn
+        their ideas into high-quality visual experiences.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <div class="contact-box">
+
+      <h3>Have a project in mind?</h3>
+
+      <p>
+        Contact me for AI prompts, cinematic visuals,
+        advertisements or custom creative projects.
+      </p>
+
+      <a class="contact-email" href="mailto:vkaieditor@gmail.com">
+        vkaieditor@gmail.com
+      </a>
+
+      <br>
+
+      <a href="mailto:vkaieditor@gmail.com" class="btn primary">
+        Contact Me
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    © 2026 VK AI Editor.
+    All Rights Reserved.
+
+  </footer>
+
+
+
+</body></html>
